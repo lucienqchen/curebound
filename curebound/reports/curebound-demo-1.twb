@@ -1,0 +1,2711 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20221.22.0324.2209                               -->
+<workbook original-version='18.1' source-build='2022.1.0 (20221.22.0324.2209)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='curebound-demo-1' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='2022_Pedal_ROI' inline='true' name='federated.11codmy1pu4nb01der48z02f2bcb' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='2022_Pedal_ROI' name='textscan.0d8vbsr1fp2mcz14emyh41qzcdkv'>
+            <connection class='textscan' directory='C:/Users/phuro/Biokind/curebound-team/curebound/data/interim' filename='2022_Pedal_ROI.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0d8vbsr1fp2mcz14emyh41qzcdkv' name='2022_Pedal_ROI.csv' table='[2022_Pedal_ROI#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='real' name='ID' ordinal='1' />
+            <column datatype='string' name='Event Name' ordinal='2' />
+            <column datatype='real' name='Award ID' ordinal='3' />
+            <column datatype='string' name='Project Title' ordinal='4' />
+            <column datatype='string' name='PI Institution' ordinal='5' />
+            <column datatype='string' name='Other Institution' ordinal='6' />
+            <column datatype='boolean' name='Prevention and diagnostic tools' ordinal='7' />
+            <column datatype='boolean' name='Novel approaches and new therapeutic platforms' ordinal='8' />
+            <column datatype='boolean' name='Immunotherapies and personalized vaccines' ordinal='9' />
+            <column datatype='boolean' name='Addressing cancer disparities' ordinal='10' />
+            <column datatype='boolean' name='Pediatric cancers' ordinal='11' />
+            <column datatype='string' name='Specific Aims' ordinal='12' />
+            <column datatype='string' name='Aim 1' ordinal='13' />
+            <column datatype='string' name='Aim 2' ordinal='14' />
+            <column datatype='string' name='Aim 3' ordinal='15' />
+            <column datatype='string' name='Aim 4' ordinal='16' />
+            <column datatype='string' name='Aim 5' ordinal='17' />
+            <column datatype='string' name='Aim 6' ordinal='18' />
+            <column datatype='string' name='Public Health Significance' ordinal='19' />
+            <column datatype='real' name='Award Amount' ordinal='20' />
+            <column datatype='date' name='Grant Start Date:' ordinal='21' />
+            <column datatype='date' name='Grant End Date:' ordinal='22' />
+            <column datatype='string' name='Complete' ordinal='23' />
+            <column datatype='boolean' name='SR - None' ordinal='24' />
+            <column datatype='boolean' name='SR - Biobehaviorial MCC' ordinal='25' />
+            <column datatype='boolean' name='SR - Biorepository &amp; Tissue Tech. MCC' ordinal='26' />
+            <column datatype='boolean' name='SR - Biostatistics MCC' ordinal='27' />
+            <column datatype='boolean' name='SR - Clinical Trials Office MCC' ordinal='28' />
+            <column datatype='boolean' name='SR - Flow Cytometry MCC' ordinal='29' />
+            <column datatype='boolean' name='SR - Genomics &amp; Computational Bio. MCC' ordinal='30' />
+            <column datatype='boolean' name='SR - In Vivo Imaging MCC' ordinal='31' />
+            <column datatype='boolean' name='SR - Microscopy MCC' ordinal='32' />
+            <column datatype='boolean' name='SR - Radiation Medicine MCC' ordinal='33' />
+            <column datatype='boolean' name='SR - Transgenic Mouse MCC' ordinal='34' />
+            <column datatype='boolean' name='SR - Gene Transfer/Targeting/Therap Salk' ordinal='35' />
+            <column datatype='boolean' name='SR - Transgenic Salk' ordinal='36' />
+            <column datatype='boolean' name='SR - Mass Spect - Proteom/Metabol Salk' ordinal='37' />
+            <column datatype='boolean' name='SR - Chemical Library Screening SBPMDI' ordinal='38' />
+            <column datatype='boolean' name='SR - Functional Genomics SBPMDI' ordinal='39' />
+            <column datatype='boolean' name='Cancer Metabolism SBPMDI' ordinal='40' />
+            <column datatype='string' name='Pedal Importance (recruitment, retention, advancement)' ordinal='41' />
+            <column datatype='string' name='If yes, please specify' ordinal='42' />
+            <column datatype='string' name='If no, please specify' ordinal='43' />
+            <column datatype='string' name='Clinical Trials Resulted' ordinal='44' />
+            <column datatype='string' name='First Clinical Trial' ordinal='45' />
+            <column datatype='real' name='First Clinical Trial Patient Count' ordinal='46' />
+            <column datatype='string' name='Second Clinical Trial' ordinal='47' />
+            <column datatype='real' name='Second Clinical Trial Patient Count' ordinal='48' />
+            <column datatype='string' name='Companies Founded' ordinal='49' />
+            <column datatype='string' name='Patents Filed' ordinal='50' />
+            <column datatype='string' name='Patent Details' ordinal='51' />
+            <column datatype='string' name='Peer-Reviewed Publications Count' ordinal='52' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0d8vbsr1fp2mcz14emyh41qzcdkv' name='2022_Pedal_ROI.csv' table='[2022_Pedal_ROI#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='real' name='ID' ordinal='1' />
+            <column datatype='string' name='Event Name' ordinal='2' />
+            <column datatype='real' name='Award ID' ordinal='3' />
+            <column datatype='string' name='Project Title' ordinal='4' />
+            <column datatype='string' name='PI Institution' ordinal='5' />
+            <column datatype='string' name='Other Institution' ordinal='6' />
+            <column datatype='boolean' name='Prevention and diagnostic tools' ordinal='7' />
+            <column datatype='boolean' name='Novel approaches and new therapeutic platforms' ordinal='8' />
+            <column datatype='boolean' name='Immunotherapies and personalized vaccines' ordinal='9' />
+            <column datatype='boolean' name='Addressing cancer disparities' ordinal='10' />
+            <column datatype='boolean' name='Pediatric cancers' ordinal='11' />
+            <column datatype='string' name='Specific Aims' ordinal='12' />
+            <column datatype='string' name='Aim 1' ordinal='13' />
+            <column datatype='string' name='Aim 2' ordinal='14' />
+            <column datatype='string' name='Aim 3' ordinal='15' />
+            <column datatype='string' name='Aim 4' ordinal='16' />
+            <column datatype='string' name='Aim 5' ordinal='17' />
+            <column datatype='string' name='Aim 6' ordinal='18' />
+            <column datatype='string' name='Public Health Significance' ordinal='19' />
+            <column datatype='real' name='Award Amount' ordinal='20' />
+            <column datatype='date' name='Grant Start Date:' ordinal='21' />
+            <column datatype='date' name='Grant End Date:' ordinal='22' />
+            <column datatype='string' name='Complete' ordinal='23' />
+            <column datatype='boolean' name='SR - None' ordinal='24' />
+            <column datatype='boolean' name='SR - Biobehaviorial MCC' ordinal='25' />
+            <column datatype='boolean' name='SR - Biorepository &amp; Tissue Tech. MCC' ordinal='26' />
+            <column datatype='boolean' name='SR - Biostatistics MCC' ordinal='27' />
+            <column datatype='boolean' name='SR - Clinical Trials Office MCC' ordinal='28' />
+            <column datatype='boolean' name='SR - Flow Cytometry MCC' ordinal='29' />
+            <column datatype='boolean' name='SR - Genomics &amp; Computational Bio. MCC' ordinal='30' />
+            <column datatype='boolean' name='SR - In Vivo Imaging MCC' ordinal='31' />
+            <column datatype='boolean' name='SR - Microscopy MCC' ordinal='32' />
+            <column datatype='boolean' name='SR - Radiation Medicine MCC' ordinal='33' />
+            <column datatype='boolean' name='SR - Transgenic Mouse MCC' ordinal='34' />
+            <column datatype='boolean' name='SR - Gene Transfer/Targeting/Therap Salk' ordinal='35' />
+            <column datatype='boolean' name='SR - Transgenic Salk' ordinal='36' />
+            <column datatype='boolean' name='SR - Mass Spect - Proteom/Metabol Salk' ordinal='37' />
+            <column datatype='boolean' name='SR - Chemical Library Screening SBPMDI' ordinal='38' />
+            <column datatype='boolean' name='SR - Functional Genomics SBPMDI' ordinal='39' />
+            <column datatype='boolean' name='Cancer Metabolism SBPMDI' ordinal='40' />
+            <column datatype='string' name='Pedal Importance (recruitment, retention, advancement)' ordinal='41' />
+            <column datatype='string' name='If yes, please specify' ordinal='42' />
+            <column datatype='string' name='If no, please specify' ordinal='43' />
+            <column datatype='string' name='Clinical Trials Resulted' ordinal='44' />
+            <column datatype='string' name='First Clinical Trial' ordinal='45' />
+            <column datatype='real' name='First Clinical Trial Patient Count' ordinal='46' />
+            <column datatype='string' name='Second Clinical Trial' ordinal='47' />
+            <column datatype='real' name='Second Clinical Trial Patient Count' ordinal='48' />
+            <column datatype='string' name='Companies Founded' ordinal='49' />
+            <column datatype='string' name='Patents Filed' ordinal='50' />
+            <column datatype='string' name='Patent Details' ordinal='51' />
+            <column datatype='string' name='Peer-Reviewed Publications Count' ordinal='52' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ID]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Event Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Event Name]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>Event Name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Award ID</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Award ID]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>Award ID</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Project Title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Project Title]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>Project Title</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PI Institution</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PI Institution]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>PI Institution</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Other Institution</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Other Institution]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>Other Institution</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Prevention and diagnostic tools</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Prevention and diagnostic tools]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>Prevention and diagnostic tools</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Novel approaches and new therapeutic platforms</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Novel approaches and new therapeutic platforms]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>Novel approaches and new therapeutic platforms</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Immunotherapies and personalized vaccines</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Immunotherapies and personalized vaccines]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>Immunotherapies and personalized vaccines</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Addressing cancer disparities</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Addressing cancer disparities]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>Addressing cancer disparities</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pediatric cancers</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Pediatric cancers]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>Pediatric cancers</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Specific Aims</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Specific Aims]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>Specific Aims</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aim 1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Aim 1]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>Aim 1</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aim 2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Aim 2]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>Aim 2</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aim 3</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Aim 3]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>Aim 3</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aim 4</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Aim 4]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>Aim 4</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aim 5</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Aim 5]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>Aim 5</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aim 6</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Aim 6]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>Aim 6</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Public Health Significance</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Public Health Significance]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>Public Health Significance</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Award Amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Award Amount]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>Award Amount</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Grant Start Date:</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Grant Start Date:]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>Grant Start Date:</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Grant End Date:</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Grant End Date:]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>Grant End Date:</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Complete</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Complete]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>Complete</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SR - None</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[SR - None]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>SR - None</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SR - Biobehaviorial MCC</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[SR - Biobehaviorial MCC]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>SR - Biobehaviorial MCC</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SR - Biorepository &amp; Tissue Tech. MCC</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[SR - Biorepository &amp; Tissue Tech. MCC]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>SR - Biorepository &amp; Tissue Tech. MCC</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SR - Biostatistics MCC</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[SR - Biostatistics MCC]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>SR - Biostatistics MCC</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SR - Clinical Trials Office MCC</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[SR - Clinical Trials Office MCC]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>SR - Clinical Trials Office MCC</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SR - Flow Cytometry MCC</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[SR - Flow Cytometry MCC]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>SR - Flow Cytometry MCC</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SR - Genomics &amp; Computational Bio. MCC</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[SR - Genomics &amp; Computational Bio. MCC]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>SR - Genomics &amp; Computational Bio. MCC</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SR - In Vivo Imaging MCC</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[SR - In Vivo Imaging MCC]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>SR - In Vivo Imaging MCC</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SR - Microscopy MCC</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[SR - Microscopy MCC]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>SR - Microscopy MCC</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SR - Radiation Medicine MCC</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[SR - Radiation Medicine MCC]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>SR - Radiation Medicine MCC</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SR - Transgenic Mouse MCC</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[SR - Transgenic Mouse MCC]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>SR - Transgenic Mouse MCC</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SR - Gene Transfer/Targeting/Therap Salk</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[SR - Gene Transfer/Targeting/Therap Salk]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>SR - Gene Transfer/Targeting/Therap Salk</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SR - Transgenic Salk</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[SR - Transgenic Salk]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>SR - Transgenic Salk</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SR - Mass Spect - Proteom/Metabol Salk</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[SR - Mass Spect - Proteom/Metabol Salk]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>SR - Mass Spect - Proteom/Metabol Salk</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SR - Chemical Library Screening SBPMDI</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[SR - Chemical Library Screening SBPMDI]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>SR - Chemical Library Screening SBPMDI</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SR - Functional Genomics SBPMDI</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[SR - Functional Genomics SBPMDI]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>SR - Functional Genomics SBPMDI</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cancer Metabolism SBPMDI</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Cancer Metabolism SBPMDI]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>Cancer Metabolism SBPMDI</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pedal Importance (recruitment, retention, advancement)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pedal Importance (recruitment, retention, advancement)]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>Pedal Importance (recruitment, retention, advancement)</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>If yes, please specify</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[If yes, please specify]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>If yes, please specify</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>If no, please specify</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[If no, please specify]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>If no, please specify</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Clinical Trials Resulted</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Clinical Trials Resulted]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>Clinical Trials Resulted</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>First Clinical Trial</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[First Clinical Trial]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>First Clinical Trial</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>First Clinical Trial Patient Count</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[First Clinical Trial Patient Count]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>First Clinical Trial Patient Count</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Second Clinical Trial</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Second Clinical Trial]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>Second Clinical Trial</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Second Clinical Trial Patient Count</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Second Clinical Trial Patient Count]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>Second Clinical Trial Patient Count</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Companies Founded</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Companies Founded]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>Companies Founded</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Patents Filed</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Patents Filed]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>Patents Filed</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Patent Details</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Patent Details]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>Patent Details</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Peer-Reviewed Publications Count</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Peer-Reviewed Publications Count]</local-name>
+            <parent-name>[2022_Pedal_ROI.csv]</parent-name>
+            <remote-alias>Peer-Reviewed Publications Count</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='real' name='[Award Amount]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Award ID]' role='dimension' type='ordinal' />
+      <column caption='Prevention &amp; diagnostic tools' datatype='integer' name='[Calculation_1750492905378336769]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Prevention and diagnostic tools] == True THEN 1 ELSE 0 END' />
+      </column>
+      <column caption='Novel approaches &amp; new therapeutic platforms' datatype='integer' name='[Calculation_1750492905379180546]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Novel approaches and new therapeutic platforms] == True THEN 1 ELSE 0 END' />
+      </column>
+      <column caption='Immunotherapies &amp; personalized vaccines' datatype='integer' name='[Calculation_1750492905382330372]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Immunotherapies and personalized vaccines] == True THEN 1 ELSE 0 END' />
+      </column>
+      <column caption='Addressing cancer disparities ' datatype='integer' name='[Calculation_1750492905383522309]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Addressing cancer disparities] == True THEN 1 ELSE 0 END' />
+      </column>
+      <column caption='Pediatric cancers ' datatype='integer' name='[Calculation_1750492905383690246]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Pediatric cancers] == True THEN 1 ELSE 0 END' />
+      </column>
+      <column datatype='integer' name='[F1]' role='measure' type='quantitative' />
+      <column datatype='real' name='[First Clinical Trial Patient Count]' role='measure' type='quantitative' />
+      <column datatype='real' name='[ID]' role='dimension' type='ordinal' />
+      <column datatype='real' name='[Second Clinical Trial Patient Count]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='2022_Pedal_ROI.csv' datatype='table' name='[__tableau_internal_object_id__].[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Award Amount]' derivation='Sum' name='[sum:Award Amount:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1750492905378336769]' derivation='Sum' name='[sum:Calculation_1750492905378336769:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1750492905379180546]' derivation='Sum' name='[sum:Calculation_1750492905379180546:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1750492905382330372]' derivation='Sum' name='[sum:Calculation_1750492905382330372:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1750492905383522309]' derivation='Sum' name='[sum:Calculation_1750492905383522309:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1750492905383690246]' derivation='Sum' name='[sum:Calculation_1750492905383690246:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[F1]' derivation='Sum' name='[sum:F1:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[First Clinical Trial Patient Count]' derivation='Sum' name='[sum:First Clinical Trial Patient Count:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Second Clinical Trial Patient Count]' derivation='Sum' name='[sum:Second Clinical Trial Patient Count:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/phuro/OneDrive/Documents/My Tableau Repository/Datasources/Biokind/2022_Pedal_ROI.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='05/12/2023 10:18:07 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='2022_Pedal_ROI' increment-value='%null%' refresh-type='create' rows-inserted='190' timestamp-start='2023-05-12 10:18:05.771' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>190</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ID</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ID</remote-alias>
+              <ordinal>1</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>190</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Event Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Event Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Event Name</remote-alias>
+              <ordinal>2</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Award ID</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Award ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Award ID</remote-alias>
+              <ordinal>3</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>188</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Project Title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Project Title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Project Title</remote-alias>
+              <ordinal>4</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>79</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PI Institution</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PI Institution]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PI Institution</remote-alias>
+              <ordinal>5</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Other Institution</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Other Institution]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Other Institution</remote-alias>
+              <ordinal>6</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Prevention and diagnostic tools</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[Prevention and diagnostic tools]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Prevention and diagnostic tools</remote-alias>
+              <ordinal>7</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Novel approaches and new therapeutic platforms</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[Novel approaches and new therapeutic platforms]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Novel approaches and new therapeutic platforms</remote-alias>
+              <ordinal>8</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Immunotherapies and personalized vaccines</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[Immunotherapies and personalized vaccines]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Immunotherapies and personalized vaccines</remote-alias>
+              <ordinal>9</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Addressing cancer disparities</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[Addressing cancer disparities]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Addressing cancer disparities</remote-alias>
+              <ordinal>10</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pediatric cancers</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[Pediatric cancers]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pediatric cancers</remote-alias>
+              <ordinal>11</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Specific Aims</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Specific Aims]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Specific Aims</remote-alias>
+              <ordinal>12</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Aim 1</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Aim 1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Aim 1</remote-alias>
+              <ordinal>13</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>97</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Aim 2</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Aim 2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Aim 2</remote-alias>
+              <ordinal>14</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>87</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Aim 3</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Aim 3]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Aim 3</remote-alias>
+              <ordinal>15</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Aim 4</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Aim 4]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Aim 4</remote-alias>
+              <ordinal>16</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Aim 5</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Aim 5]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Aim 5</remote-alias>
+              <ordinal>17</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Aim 6</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Aim 6]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Aim 6</remote-alias>
+              <ordinal>18</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Public Health Significance</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Public Health Significance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Public Health Significance</remote-alias>
+              <ordinal>19</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>140</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Award Amount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Award Amount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Award Amount</remote-alias>
+              <ordinal>20</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Grant Start Date:</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Grant Start Date:]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Grant Start Date:</remote-alias>
+              <ordinal>21</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Grant End Date:</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Grant End Date:]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Grant End Date:</remote-alias>
+              <ordinal>22</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Complete</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Complete]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Complete</remote-alias>
+              <ordinal>23</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SR - None</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[SR - None]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SR - None</remote-alias>
+              <ordinal>24</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SR - Biobehaviorial MCC</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[SR - Biobehaviorial MCC]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SR - Biobehaviorial MCC</remote-alias>
+              <ordinal>25</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SR - Biorepository &amp; Tissue Tech. MCC</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[SR - Biorepository &amp; Tissue Tech. MCC]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SR - Biorepository &amp; Tissue Tech. MCC</remote-alias>
+              <ordinal>26</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SR - Biostatistics MCC</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[SR - Biostatistics MCC]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SR - Biostatistics MCC</remote-alias>
+              <ordinal>27</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SR - Clinical Trials Office MCC</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[SR - Clinical Trials Office MCC]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SR - Clinical Trials Office MCC</remote-alias>
+              <ordinal>28</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SR - Flow Cytometry MCC</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[SR - Flow Cytometry MCC]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SR - Flow Cytometry MCC</remote-alias>
+              <ordinal>29</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SR - Genomics &amp; Computational Bio. MCC</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[SR - Genomics &amp; Computational Bio. MCC]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SR - Genomics &amp; Computational Bio. MCC</remote-alias>
+              <ordinal>30</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SR - In Vivo Imaging MCC</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[SR - In Vivo Imaging MCC]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SR - In Vivo Imaging MCC</remote-alias>
+              <ordinal>31</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SR - Microscopy MCC</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[SR - Microscopy MCC]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SR - Microscopy MCC</remote-alias>
+              <ordinal>32</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SR - Radiation Medicine MCC</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[SR - Radiation Medicine MCC]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SR - Radiation Medicine MCC</remote-alias>
+              <ordinal>33</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SR - Transgenic Mouse MCC</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[SR - Transgenic Mouse MCC]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SR - Transgenic Mouse MCC</remote-alias>
+              <ordinal>34</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SR - Gene Transfer/Targeting/Therap Salk</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[SR - Gene Transfer/Targeting/Therap Salk]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SR - Gene Transfer/Targeting/Therap Salk</remote-alias>
+              <ordinal>35</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SR - Transgenic Salk</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[SR - Transgenic Salk]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SR - Transgenic Salk</remote-alias>
+              <ordinal>36</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SR - Mass Spect - Proteom/Metabol Salk</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[SR - Mass Spect - Proteom/Metabol Salk]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SR - Mass Spect - Proteom/Metabol Salk</remote-alias>
+              <ordinal>37</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SR - Chemical Library Screening SBPMDI</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[SR - Chemical Library Screening SBPMDI]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SR - Chemical Library Screening SBPMDI</remote-alias>
+              <ordinal>38</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SR - Functional Genomics SBPMDI</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[SR - Functional Genomics SBPMDI]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SR - Functional Genomics SBPMDI</remote-alias>
+              <ordinal>39</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Cancer Metabolism SBPMDI</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[Cancer Metabolism SBPMDI]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Cancer Metabolism SBPMDI</remote-alias>
+              <ordinal>40</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pedal Importance (recruitment, retention, advancement)</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Pedal Importance (recruitment, retention, advancement)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pedal Importance (recruitment, retention, advancement)</remote-alias>
+              <ordinal>41</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>If yes, please specify</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[If yes, please specify]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>If yes, please specify</remote-alias>
+              <ordinal>42</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>61</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>If no, please specify</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[If no, please specify]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>If no, please specify</remote-alias>
+              <ordinal>43</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Clinical Trials Resulted</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Clinical Trials Resulted]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Clinical Trials Resulted</remote-alias>
+              <ordinal>44</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>First Clinical Trial</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[First Clinical Trial]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>First Clinical Trial</remote-alias>
+              <ordinal>45</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>First Clinical Trial Patient Count</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[First Clinical Trial Patient Count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>First Clinical Trial Patient Count</remote-alias>
+              <ordinal>46</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Second Clinical Trial</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Second Clinical Trial]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Second Clinical Trial</remote-alias>
+              <ordinal>47</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Second Clinical Trial Patient Count</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Second Clinical Trial Patient Count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Second Clinical Trial Patient Count</remote-alias>
+              <ordinal>48</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Companies Founded</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Companies Founded]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Companies Founded</remote-alias>
+              <ordinal>49</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Patents Filed</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Patents Filed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Patents Filed</remote-alias>
+              <ordinal>50</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Patent Details</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Patent Details]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Patent Details</remote-alias>
+              <ordinal>51</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Peer-Reviewed Publications Count</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Peer-Reviewed Publications Count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Peer-Reviewed Publications Count</remote-alias>
+              <ordinal>52</ordinal>
+              <family>2022_Pedal_ROI.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='ordinal' measure-ordering='ordinal' show-aliased-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#0077be'>
+              <bucket>&quot;[federated.11codmy1pu4nb01der48z02f2bcb].[sum:Calculation_1750492905383522309:qk]&quot;</bucket>
+            </map>
+            <map to='#00a74c'>
+              <bucket>&quot;[federated.11codmy1pu4nb01der48z02f2bcb].[sum:Calculation_1750492905379180546:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.11codmy1pu4nb01der48z02f2bcb]&quot;</bucket>
+            </map>
+            <map to='#999999'>
+              <bucket>&quot;[federated.11codmy1pu4nb01der48z02f2bcb].[sum:Calculation_1750492905383690246:qk]&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;[federated.11codmy1pu4nb01der48z02f2bcb].[sum:First Clinical Trial Patient Count:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.11codmy1pu4nb01der48z02f2bcb].[sum:F1:qk]&quot;</bucket>
+            </map>
+            <map to='#b37feb'>
+              <bucket>&quot;[federated.11codmy1pu4nb01der48z02f2bcb].[sum:Calculation_1750492905378336769:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.11codmy1pu4nb01der48z02f2bcb].[sum:Second Clinical Trial Patient Count:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.11codmy1pu4nb01der48z02f2bcb].[__tableau_internal_object_id__].[cnt:2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235:qk]&quot;</bucket>
+            </map>
+            <map to='#ff5252'>
+              <bucket>&quot;[federated.11codmy1pu4nb01der48z02f2bcb].[sum:Calculation_1750492905382330372:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;[federated.11codmy1pu4nb01der48z02f2bcb].[sum:Award Amount:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='F1' />
+        <field-sort-custom-order field='ID' />
+        <field-sort-custom-order field='Event Name' />
+        <field-sort-custom-order field='Award ID' />
+        <field-sort-custom-order field='Project Title' />
+        <field-sort-custom-order field='PI Institution' />
+        <field-sort-custom-order field='Other Institution' />
+        <field-sort-custom-order field='Prevention and diagnostic tools' />
+        <field-sort-custom-order field='Calculation_1750492905378336769' />
+        <field-sort-custom-order field='Calculation_1750492905380552707' />
+        <field-sort-custom-order field='Novel approaches and new therapeutic platforms' />
+        <field-sort-custom-order field='Immunotherapies and personalized vaccines' />
+        <field-sort-custom-order field='Addressing cancer disparities' />
+        <field-sort-custom-order field='Pediatric cancers' />
+        <field-sort-custom-order field='Specific Aims' />
+        <field-sort-custom-order field='Aim 1' />
+        <field-sort-custom-order field='Aim 2' />
+        <field-sort-custom-order field='Aim 3' />
+        <field-sort-custom-order field='Aim 4' />
+        <field-sort-custom-order field='Aim 5' />
+        <field-sort-custom-order field='Aim 6' />
+        <field-sort-custom-order field='Public Health Significance' />
+        <field-sort-custom-order field='Award Amount' />
+        <field-sort-custom-order field='Grant Start Date:' />
+        <field-sort-custom-order field='Grant End Date:' />
+        <field-sort-custom-order field='Complete' />
+        <field-sort-custom-order field='SR - None' />
+        <field-sort-custom-order field='SR - Biobehaviorial MCC' />
+        <field-sort-custom-order field='SR - Biorepository &amp; Tissue Tech. MCC' />
+        <field-sort-custom-order field='SR - Biostatistics MCC' />
+        <field-sort-custom-order field='SR - Clinical Trials Office MCC' />
+        <field-sort-custom-order field='SR - Flow Cytometry MCC' />
+        <field-sort-custom-order field='SR - Genomics &amp; Computational Bio. MCC' />
+        <field-sort-custom-order field='SR - In Vivo Imaging MCC' />
+        <field-sort-custom-order field='SR - Microscopy MCC' />
+        <field-sort-custom-order field='SR - Radiation Medicine MCC' />
+        <field-sort-custom-order field='SR - Transgenic Mouse MCC' />
+        <field-sort-custom-order field='SR - Gene Transfer/Targeting/Therap Salk' />
+        <field-sort-custom-order field='SR - Transgenic Salk' />
+        <field-sort-custom-order field='SR - Mass Spect - Proteom/Metabol Salk' />
+        <field-sort-custom-order field='SR - Chemical Library Screening SBPMDI' />
+        <field-sort-custom-order field='SR - Functional Genomics SBPMDI' />
+        <field-sort-custom-order field='Cancer Metabolism SBPMDI' />
+        <field-sort-custom-order field='Pedal Importance (recruitment, retention, advancement)' />
+        <field-sort-custom-order field='If yes, please specify' />
+        <field-sort-custom-order field='If no, please specify' />
+        <field-sort-custom-order field='Clinical Trials Resulted' />
+        <field-sort-custom-order field='First Clinical Trial' />
+        <field-sort-custom-order field='First Clinical Trial Patient Count' />
+        <field-sort-custom-order field='Second Clinical Trial' />
+        <field-sort-custom-order field='Second Clinical Trial Patient Count' />
+        <field-sort-custom-order field='Companies Founded' />
+        <field-sort-custom-order field='Patents Filed' />
+        <field-sort-custom-order field='Patent Details' />
+        <field-sort-custom-order field='Peer-Reviewed Publications Count' />
+      </field-sort-info>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='2022_Pedal_ROI.csv' id='2022_Pedal_ROI.csv_E68C4DDA766B43D5AA36D52C15F50235'>
+            <properties context=''>
+              <relation connection='textscan.0d8vbsr1fp2mcz14emyh41qzcdkv' name='2022_Pedal_ROI.csv' table='[2022_Pedal_ROI#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='real' name='ID' ordinal='1' />
+                  <column datatype='string' name='Event Name' ordinal='2' />
+                  <column datatype='real' name='Award ID' ordinal='3' />
+                  <column datatype='string' name='Project Title' ordinal='4' />
+                  <column datatype='string' name='PI Institution' ordinal='5' />
+                  <column datatype='string' name='Other Institution' ordinal='6' />
+                  <column datatype='boolean' name='Prevention and diagnostic tools' ordinal='7' />
+                  <column datatype='boolean' name='Novel approaches and new therapeutic platforms' ordinal='8' />
+                  <column datatype='boolean' name='Immunotherapies and personalized vaccines' ordinal='9' />
+                  <column datatype='boolean' name='Addressing cancer disparities' ordinal='10' />
+                  <column datatype='boolean' name='Pediatric cancers' ordinal='11' />
+                  <column datatype='string' name='Specific Aims' ordinal='12' />
+                  <column datatype='string' name='Aim 1' ordinal='13' />
+                  <column datatype='string' name='Aim 2' ordinal='14' />
+                  <column datatype='string' name='Aim 3' ordinal='15' />
+                  <column datatype='string' name='Aim 4' ordinal='16' />
+                  <column datatype='string' name='Aim 5' ordinal='17' />
+                  <column datatype='string' name='Aim 6' ordinal='18' />
+                  <column datatype='string' name='Public Health Significance' ordinal='19' />
+                  <column datatype='real' name='Award Amount' ordinal='20' />
+                  <column datatype='date' name='Grant Start Date:' ordinal='21' />
+                  <column datatype='date' name='Grant End Date:' ordinal='22' />
+                  <column datatype='string' name='Complete' ordinal='23' />
+                  <column datatype='boolean' name='SR - None' ordinal='24' />
+                  <column datatype='boolean' name='SR - Biobehaviorial MCC' ordinal='25' />
+                  <column datatype='boolean' name='SR - Biorepository &amp; Tissue Tech. MCC' ordinal='26' />
+                  <column datatype='boolean' name='SR - Biostatistics MCC' ordinal='27' />
+                  <column datatype='boolean' name='SR - Clinical Trials Office MCC' ordinal='28' />
+                  <column datatype='boolean' name='SR - Flow Cytometry MCC' ordinal='29' />
+                  <column datatype='boolean' name='SR - Genomics &amp; Computational Bio. MCC' ordinal='30' />
+                  <column datatype='boolean' name='SR - In Vivo Imaging MCC' ordinal='31' />
+                  <column datatype='boolean' name='SR - Microscopy MCC' ordinal='32' />
+                  <column datatype='boolean' name='SR - Radiation Medicine MCC' ordinal='33' />
+                  <column datatype='boolean' name='SR - Transgenic Mouse MCC' ordinal='34' />
+                  <column datatype='boolean' name='SR - Gene Transfer/Targeting/Therap Salk' ordinal='35' />
+                  <column datatype='boolean' name='SR - Transgenic Salk' ordinal='36' />
+                  <column datatype='boolean' name='SR - Mass Spect - Proteom/Metabol Salk' ordinal='37' />
+                  <column datatype='boolean' name='SR - Chemical Library Screening SBPMDI' ordinal='38' />
+                  <column datatype='boolean' name='SR - Functional Genomics SBPMDI' ordinal='39' />
+                  <column datatype='boolean' name='Cancer Metabolism SBPMDI' ordinal='40' />
+                  <column datatype='string' name='Pedal Importance (recruitment, retention, advancement)' ordinal='41' />
+                  <column datatype='string' name='If yes, please specify' ordinal='42' />
+                  <column datatype='string' name='If no, please specify' ordinal='43' />
+                  <column datatype='string' name='Clinical Trials Resulted' ordinal='44' />
+                  <column datatype='string' name='First Clinical Trial' ordinal='45' />
+                  <column datatype='real' name='First Clinical Trial Patient Count' ordinal='46' />
+                  <column datatype='string' name='Second Clinical Trial' ordinal='47' />
+                  <column datatype='real' name='Second Clinical Trial Patient Count' ordinal='48' />
+                  <column datatype='string' name='Companies Founded' ordinal='49' />
+                  <column datatype='string' name='Patents Filed' ordinal='50' />
+                  <column datatype='string' name='Patent Details' ordinal='51' />
+                  <column datatype='string' name='Peer-Reviewed Publications Count' ordinal='52' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='pillars-pie-chart'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Tableau Regular'>Project Count by Investment Pillar</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='2022_Pedal_ROI' name='federated.11codmy1pu4nb01der48z02f2bcb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11codmy1pu4nb01der48z02f2bcb'>
+            <column datatype='boolean' name='[Addressing cancer disparities]' role='dimension' type='nominal' />
+            <column caption='Prevention &amp; diagnostic tools' datatype='integer' name='[Calculation_1750492905378336769]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Prevention and diagnostic tools] == True THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='Novel approaches &amp; new therapeutic platforms' datatype='integer' name='[Calculation_1750492905379180546]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Novel approaches and new therapeutic platforms] == True THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='Immunotherapies &amp; personalized vaccines' datatype='integer' name='[Calculation_1750492905382330372]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Immunotherapies and personalized vaccines] == True THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='Addressing cancer disparities ' datatype='integer' name='[Calculation_1750492905383522309]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Addressing cancer disparities] == True THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='Pediatric cancers ' datatype='integer' name='[Calculation_1750492905383690246]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Pediatric cancers] == True THEN 1 ELSE 0 END' />
+            </column>
+            <column datatype='boolean' name='[Immunotherapies and personalized vaccines]' role='dimension' type='nominal' />
+            <column datatype='boolean' name='[Novel approaches and new therapeutic platforms]' role='dimension' type='nominal' />
+            <column datatype='boolean' name='[Pediatric cancers]' role='dimension' type='nominal' />
+            <column datatype='boolean' name='[Prevention and diagnostic tools]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1750492905378336769]' derivation='Sum' name='[sum:Calculation_1750492905378336769:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1750492905379180546]' derivation='Sum' name='[sum:Calculation_1750492905379180546:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1750492905382330372]' derivation='Sum' name='[sum:Calculation_1750492905382330372:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1750492905383522309]' derivation='Sum' name='[sum:Calculation_1750492905383522309:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1750492905383690246]' derivation='Sum' name='[sum:Calculation_1750492905383690246:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.11codmy1pu4nb01der48z02f2bcb].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.11codmy1pu4nb01der48z02f2bcb].[sum:Calculation_1750492905383522309:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.11codmy1pu4nb01der48z02f2bcb].[sum:Calculation_1750492905382330372:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.11codmy1pu4nb01der48z02f2bcb].[sum:Calculation_1750492905379180546:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.11codmy1pu4nb01der48z02f2bcb].[sum:Calculation_1750492905383690246:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.11codmy1pu4nb01der48z02f2bcb].[sum:Calculation_1750492905378336769:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.11codmy1pu4nb01der48z02f2bcb].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.11codmy1pu4nb01der48z02f2bcb].[sum:Calculation_1750492905383690246:qk]&quot;</bucket>
+              <bucket>&quot;[federated.11codmy1pu4nb01der48z02f2bcb].[sum:Calculation_1750492905383522309:qk]&quot;</bucket>
+              <bucket>&quot;[federated.11codmy1pu4nb01der48z02f2bcb].[sum:Calculation_1750492905379180546:qk]&quot;</bucket>
+              <bucket>&quot;[federated.11codmy1pu4nb01der48z02f2bcb].[sum:Calculation_1750492905378336769:qk]&quot;</bucket>
+              <bucket>&quot;[federated.11codmy1pu4nb01der48z02f2bcb].[sum:Calculation_1750492905382330372:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.11codmy1pu4nb01der48z02f2bcb].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.11codmy1pu4nb01der48z02f2bcb].[Multiple Values]' value='*' />
+            <format attr='text-format' field='[federated.11codmy1pu4nb01der48z02f2bcb].[sum:Calculation_1750492905383522309:qk]' value='*' />
+            <format attr='vertical-align' value='auto' />
+            <format attr='wrap' value='auto' />
+            <format attr='text-align' value='left' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='vertical-align' field='[federated.11codmy1pu4nb01der48z02f2bcb].[:Measure Names]' value='auto' />
+            <format attr='text-align' field='[federated.11codmy1pu4nb01der48z02f2bcb].[:Measure Names]' value='auto' />
+            <format attr='vertical-align' value='auto' />
+            <format attr='text-align' value='auto' />
+            <format attr='wrap' value='auto' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.11codmy1pu4nb01der48z02f2bcb].[:Measure Names]' />
+              <wedge-size column='[federated.11codmy1pu4nb01der48z02f2bcb].[Multiple Values]' />
+              <text column='[federated.11codmy1pu4nb01der48z02f2bcb].[:Measure Names]' />
+              <text column='[federated.11codmy1pu4nb01der48z02f2bcb].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='left' />
+                <format attr='vertical-align' value='auto' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='match' />
+                <format attr='font-weight' value='normal' />
+                <format attr='font-family' value='Tableau Semibold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#ffffff' />
+                <format attr='mark-color' value='#4e79a7' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <percentages enabled='false' mode='column' />
+      </table>
+      <simple-id uuid='{08DD544A-49D9-4A4F-9E54-BD8DEC98EB43}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Home'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='98400' x='800' y='1000'>
+              <zone h='38625' id='3' name='pillars-pie-chart' w='49200' x='800' y='11375'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='10375' id='8' param='horz' type-v2='layout-flow' w='24200' x='800' y='1000'>
+                <zone fixed-size='192' forceUpdate='true' h='10375' id='10' is-fixed='true' is-scaled='1' param='C:/Users/phuro/Biokind/curebound-team/curebound/gallery/curebound-logo.png' type-v2='bitmap' url='https://www.curebound.org/' w='24200' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone h='10375' id='11' type-v2='empty' w='74200' x='25000' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='12' param='horz' type-v2='layout-flow' w='98400' x='800' y='50000' />
+              <zone h='38625' id='13' param='horz' type-v2='layout-flow' w='49200' x='50000' y='11375' />
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='17' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='16' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='75' forceUpdate='true' h='10375' id='10' is-fixed='true' is-scaled='1' param='C:/Users/phuro/Biokind/curebound-team/curebound/gallery/curebound-logo.png' type-v2='bitmap' url='https://www.curebound.org/' w='24200' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38625' id='3' is-fixed='true' name='pillars-pie-chart' w='49200' x='800' y='11375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{753F25AC-5F8C-4C00-9431-C02A233E29B2}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='pillars-pie-chart'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.11codmy1pu4nb01der48z02f2bcb].[:Measure Names]' show-morefewerbutton='false' type='filter' />
+            <card param='[federated.11codmy1pu4nb01der48z02f2bcb].[:Measure Names]' type='highlighter' />
+            <card pane-specification-id='0' param='[federated.11codmy1pu4nb01der48z02f2bcb].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.11codmy1pu4nb01der48z02f2bcb].[io:Prevention and diagnostic tools Set:nk]</field>
+            <field>[federated.11codmy1pu4nb01der48z02f2bcb].[none:Addressing cancer disparities:nk]</field>
+            <field>[federated.11codmy1pu4nb01der48z02f2bcb].[none:Cancer Metabolism SBPMDI:nk]</field>
+            <field>[federated.11codmy1pu4nb01der48z02f2bcb].[none:Immunotherapies and personalized vaccines:nk]</field>
+            <field>[federated.11codmy1pu4nb01der48z02f2bcb].[none:Novel approaches and new therapeutic platforms:nk]</field>
+            <field>[federated.11codmy1pu4nb01der48z02f2bcb].[none:Pediatric cancers:nk]</field>
+            <field>[federated.11codmy1pu4nb01der48z02f2bcb].[none:Prevention and diagnostic tools:nk]</field>
+            <field>[federated.11codmy1pu4nb01der48z02f2bcb].[sum:Calculation_1750492905379180546:qk]</field>
+          </color-one-way>
+        </highlight>
+        <floating-toolbar-visibility value='2' />
+      </viewpoint>
+      <simple-id uuid='{BDA71FAC-3761-423C-A42B-32C3A19280DE}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Home'>
+      <viewpoints>
+        <viewpoint name='pillars-pie-chart'>
+          <zoom type='entire-view' />
+          <floating-toolbar-visibility value='2' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{B3962E95-A598-4011-9304-3CF06E804F7C}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='Home' width='384'>
+      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
+      CwDYvn37bx707ujxEyK6uLUaANHR0V7TBw4c6PDKnKDX69G/f3+vK3TCwsJw7733trrN/fff
+      j3379nm9rrrqqtOuO3/+fFRXV2P//v2IjIz0zH/++eeRnZ3dfm/kNwoPD8fll18OAHC73di8
+      eXOby3C5XMjIyGjvqhHRJaTVABgxYoTXdFvuwD1fvXr1wt69e726PgoKCrBr165WtwkJCUG/
+      fv28XicGU39NqVRCpVIhNTUVt99+u2e+2+32dL342qlXW61Zs6bN269YscKrGy8hIaFd6kVE
+      l45WA2D69OleV9Zs2rSp1Ttr29uJm6pOfAo+YdGiRe2+r183jPn5+e2+j99i2rRpngHpmpqa
+      Nm1rNpvx+OOPe827/vrr261uRHRpOGMX0K8v+3zooYcwf/78dtv52fqox40bB51O55levHhx
+      u/dr/3qsw+12Q6VStbmM9h4z8ff3P+0TUs+mtLQUU6dORW5urmeeXq/3upOZiAg4y53Ar776
+      qtcD2ex2O+69915MmjQJCxcuxOHDh1FeXo7y8nLU1dUBaHk9vtls9vxcX1/vdUnniYHO1hiN
+      RgwfPtwznZ2djczMzHN4W+fu11cOhYaGIiwszOvuY7PZ7PVYhqqqKq8byEJDQxEQENDivf/6
+      KqRff5I/9REXp3Omm+4cDgfKyspQXl6OkpISbNu2Df/3f/+HlJQUr0dLA8CLL76I+Pj4M+6L
+      iOTnjAEQGRmJRYsWtXhcwurVq3HTTTehR48eMJlMMJlMeOCBBwAAffr08Vr3vffeQ25uLmpq
+      avDSSy95LevZs+dZK/jrbqDWHo9QU1ODvXv3er1aG7g+8Wn92LFjLe62HTlyJPR6PYYOHeqZ
+      Z7fb8dZbbwGQzlrefPNNrzORkSNHQqlUIjY21usmtczMTMyfPx9WqxXLli3DypUrverQo0eP
+      M773CRMmwGQynXbZwYMHER0dDZPJhNjYWIwYMQKvvPJKi9C57bbb8Oyzz55xP0QkU+fyzOjt
+      27eLmJiYMz4X/8T3AVRVVYnAwMAWz/JXqVQttvnmm2+EEC2/DyA1NdWz7507d3otGzRokBDi
+      3L4PIDg4WAjR8rn+4eHhIi4uTuh0Oq/5SUlJorm5WQghxLffftuivOTkZNGjR48W8088118I
+      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
+      AUBEJFMMACIimWIAEBHJFAOAiEimGABERDLFACAikikGABGRTDEAiIhkigFARCRTDAAiIpli
+      ABARyRQDgIhIphgAREQyxQAgIpIpBgARkUwxAIiIZIoBQEQkUwwAIiKZYgAQEckUA4CISKYY
+      AEREMsUAICKSKQYAEZFMMQCIiGSKAUBEJFMMACIimWIAEBHJFAOAiEimGABERDLFACAikikG
+      ABGRTDEAiIhkigFARCRTDAAiIpliABARyRQDgIhIphgAREQyxQAgIpIpBgARkUwxAIiIZIoB
+      QEQkUwwAIiKZYgAQEckUA4CISKYYAEREMsUAICKSKQYAEZFMMQCIiGSKAUBEJFMMACIimWIA
+      EBHJFAOAiEimGABERDLFACAikikGABGRTDEAiIhkigFARCRTDAAiIpliABARyRQDgIhIphgA
+      REQyxQAgIpIpBgARkUwxAIiIZIoBQEQkUwwAIiKZYgAQEckUA4CISKYYAEREMsUAICKSKQYA
+      EZFMMQCIiGSKAUBEJFMMACIimWIAEBHJFAOAiEimGABERDLFACAikikGABGRTDEAiIhkigFA
+      RCRTDAAiIpliABARyRQDgIhIphgAREQyxQAgIpIpBgARkUwxAIiIZIoBQEQkUwwAIiKZYgAQ
+      EckUA4CISKYYAEREMsUAICKSKQYAEZFMMQCIiGSKAUBEJFMMACIimWIAEBHJFAOAiEimGABE
+      RDLFACAikikGABGRTDEAiIhkigFARCRTDAAiIpliABARyRQDgIhIphgAREQyxQAgIpIpBgAR
+      kUwxAIiIZIoBQEQkUwwAIiKZYgAQEckUA4CISKYYAEREMsUAICKSKQYAEZFMMQCIiGSKAUBE
+      JFMMACIimWIAEBHJFAOAiEimGABERDLFACAikikGABGRTDEAiIhkigFARCRTDAAiIpliABAR
+      yRQDgIhIphgAREQyxQAgIpIpBgARkUwxAIiIZIoBQEQkUwwAIiKZYgAQEckUA4CISKYYAERE
+      MsUAICKSKQYAEZFMMQCIiGSKAUBEJFMMACIimWIAEBHJFAOAiEimGABERDL1//YiKhVIhlAB
+      AAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='384' name='pillars-pie-chart' width='384'>
+      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
+      EQAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
