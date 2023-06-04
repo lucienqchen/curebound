@@ -51,6 +51,25 @@ def export_data(wp, df, filename):
     print(f'Successfully saved {filename} at: {wp}')
 
 
+def export_fig(wp, figure, filename):
+
+    """
+    Purpose: Save figure [figure] to path [wp]
+    
+    Params:
+    wp (str): write path containing the directory to store figure
+    figure (plotly): subject figure
+    filename (str): the file name to store [figure] 
+
+    Return: None
+
+    """
+
+    wp = os.path.join(wp, filename)
+    figure.write_html(wp)
+    print(f'Successfully saved {filename} at: {wp}')
+
+
 def query_by_columns(df, re_pattern):
 
     """
