@@ -4,22 +4,23 @@ import numpy as numpy
 import re
 
 
-def query_project(df, title):
+def query_data(df, column, content):
 
     """
-    Purpose: Examine the specific project in df, rows are queried by
-    whether the project title contains string [title]
+    Purpose: Query specific rows in [df] where value at column [column]
+    matches string [content]
 
     Params:
     df (dataframe): subject dataframe
-    title (str): full project title, or sub-string of title
+    column (str): column to match content
+    content (str): value to match column [column]
 
-    Return: (dataframe) - subset of df with rows belonging to the project
-    with title [title]
+    Return: (dataframe) - subset of df with rows where values of column 
+    [column] contain [content]
 
     """
 
-    return df[df['Project Title'].str.contains(title)]
+    return df[df[column].str.contains(content)]
 
 
 def working_directory():
